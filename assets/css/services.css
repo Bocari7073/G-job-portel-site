@@ -1,0 +1,120 @@
+:root {
+    --blue: #0429fc;       /* Bleu principal */
+    --orange: #ff8c00;     /* Orange principal */
+    --text-dark: #333;     
+    --text-light: #555;
+    --bg-light: #f8f9fc;
+}
+
+/* ------------------ SECTION SERVICES ------------------ */
+section {
+    padding: 5rem 0;
+    background: var(--bg-light);
+}
+
+/* Conteneur principal */
+.pro-left, .obje-width {
+    max-width: 1100px;
+    margin: 2rem auto 3rem auto;
+    padding: 2.5rem 3rem;
+    background: linear-gradient(135deg, #007BFF, #FF7F50); /* Dégradé bleu → orange */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}
+
+/* Effet hover */
+.pro-left:hover, .obje-width:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Titres principaux */
+.pro-left h1, .obje-width h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Sous-titres */
+.pro-left h2, .obje-width h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    color: #fff;
+}
+
+.pro-left h2::after, .obje-width h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border-radius: 5px;
+}
+
+/* Paragraphes */
+.pro-left p, .obje-width p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 1.5rem;
+}
+
+/* Liste stylisée */
+.pro-left ul, .obje-width ul {
+    margin-top: 1rem;
+    padding-left: 15px;
+}
+
+.pro-left ul li, .obje-width ul li {
+    margin: 12px 0;
+    font-size: 1.1rem;
+    color: #fff;
+    position: relative;
+    padding-left: 30px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.pro-left ul li::before, .obje-width ul li::before {
+    content: "✔";
+    color: #FFD700; /* Doré pour accent */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+}
+
+.pro-left ul li:hover, .obje-width ul li:hover {
+    transform: translateX(5px);
+    color: #FFD700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pro-left, .obje-width {
+        padding: 2rem;
+    }
+
+    .pro-left h1, .obje-width h1 {
+        font-size: 2rem;
+    }
+
+    .pro-left h2, .obje-width h2 {
+        font-size: 1.5rem;
+    }
+
+    .pro-left ul li, .obje-width ul li {
+        font-size: 1rem;
+    }
+}

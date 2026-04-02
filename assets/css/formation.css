@@ -1,0 +1,164 @@
+/* ------------------ SECTION PRINCIPALE ------------------ */
+.for {
+    background: #f0f4ff; /* bleu clair doux */
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ------------------ CONTENEUR ------------------ */
+.container {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+/* ------------------ IMAGE PRINCIPALE ------------------ */
+#main-image {
+    height: 580px;
+    background: url(images/main-image.jpg) center/cover no-repeat;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+#main-image:hover {
+    transform: scale(1.03);
+}
+
+#main-image h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 11px 0 40px 0;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: transparent;
+    background: linear-gradient(135deg, #0429fc, #ff7f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#main-image h2 span {
+    color: #ff7f00;
+}
+
+/* ------------------ BOUTON ------------------ */
+.button-1 {
+    display: block;
+    width: 180px;
+    height: 50px;
+    background: linear-gradient(135deg, #0429fc, #ff7f00);
+    color: #fff;
+    font-size: 20px;
+    margin: 20px auto 0;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.button-1:hover {
+    transform: translateY(-4px);
+    filter: brightness(1.1);
+}
+
+/* ------------------ TITRES ------------------ */
+.for h1 {
+    text-align: center;
+    color: #0429fc;
+    font-size: 36px;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #0429fc, #ff7f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.for h1:hover {
+    transform: translateY(-5px);
+}
+
+.for h2 {
+    font-size: 32px;
+    margin: 0;
+    background: linear-gradient(135deg, #0429fc, #ff7f00); /* bleu → orange */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.for h2:hover {
+    color: #0429fc;
+    transform: translateX(5px);
+}
+
+/* ------------------ PARAGRAPHES ------------------ */
+.for p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ------------------ LISTES ------------------ */
+.for ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.for ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 25px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.for ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ff7f00;
+    font-weight: bold;
+}
+
+
+/* ------------------ MOTS EN GRAS PROFESSIONNELS ------------------ */
+.for strong {
+    color: #ff7f00;           /* couleur accent orange */
+    font-weight: 700;         /* plus impactant */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.for strong:hover {
+    color: #0429fc;           /* passe au bleu au survol */
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* effet subtil de relief */
+    cursor: pointer;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 768px) {
+    .for h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    #main-image {
+        height: 400px;
+        padding: 100px 0 20px 0;
+    }
+}

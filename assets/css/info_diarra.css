@@ -1,0 +1,69 @@
+/* ------------------ SECTION INFO DIARRA ------------------ */
+.info-diarra {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-diarra:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* ------------------ TITRE ------------------ */
+.info-diarra h3 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    background: linear-gradient(135deg, #0429fc, #ff7f00); /* bleu → orange */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ------------------ PARAGRAPHES ------------------ */
+.info-diarra p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-left: 4px solid #0429fc;
+    background: rgba(4,41,252,0.03);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Effet hover */
+.info-diarra p:hover {
+    border-left: 4px solid #ff7f00;
+    background: rgba(255,127,0,0.08);
+    transform: translateX(5px);
+}
+
+/* ------------------ STRONG (LABELS) ------------------ */
+.info-diarra strong {
+    color: #0429fc;
+    font-weight: 600;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 768px) {
+    .info-diarra {
+        padding: 1.5rem;
+    }
+
+    .info-diarra h3 {
+        font-size: 1.5rem;
+    }
+
+    .info-diarra p {
+        font-size: 0.95rem;
+    }
+}

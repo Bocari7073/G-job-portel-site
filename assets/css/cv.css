@@ -1,0 +1,127 @@
+/* ------------------ BODY ------------------ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4ff;
+    margin: 0;
+    padding: 12px;
+}
+
+/* ------------------ CONTENEUR ------------------ */
+.cv-container {
+    max-width: 850px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* ------------------ HEADER ------------------ */
+.cv-section {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+/* NOM */
+.cv-section h1 {
+    font-size: 32px;
+    margin: 0;
+    background: linear-gradient(135deg, #0429fc, #ff7f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+
+.cv-section h1:hover {
+    transform: translateY(-4px);
+}
+
+/* SOUS TITRE */
+.cv-section h2 {
+    background: linear-gradient(135deg, #0429fc, #ff7f00);
+    font-size: 20px;
+    color: #fff;
+    margin: 10px auto;
+    padding: 6px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.cv-section h2:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* ------------------ SECTIONS ------------------ */
+section {
+    margin-bottom: 25px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+section:hover {
+    background: rgba(4,41,252,0.05);
+    transform: translateY(-3px);
+}
+
+/* ------------------ TITRES ------------------ */
+h3 {
+    border-left: 5px solid #0429fc;
+    padding-left: 10px;
+    color: #0429fc;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+h3:hover {
+    color: #ff7f00;
+    border-left: 5px solid #ff7f00;
+    transform: translateX(5px);
+}
+
+/* ------------------ TEXTE ------------------ */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+
+/* ------------------ LISTES ------------------ */
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    font-size: 16px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+    transition: all 0.3s ease;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 768px) {
+    .cv-section h1 {
+        font-size: 26px;
+    }
+
+    .cv-section h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}

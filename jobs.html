@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRHCOM - Recherche d'emplois</title>
+    <!-- ------------ Boxicons Icons link -------  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- ---------- Custom CSS ---------  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/jobs.css" />
+  </head>
+
+  <body>
+    <!-- Header  Section-->
+
+    <header>
+      <div id="navbar" class="objs-width">
+        <a href="index.html">
+          <img src="images/logo.png" class="logo" alt="" />
+        </a>
+
+        <ul id="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="formation.html">Nos Formations</a></li>
+          <li><a href="jobs.html">Nos Offres d'emploi</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <button id="w-btn">Rejoindre</button>
+        </ul>
+        <i id="bar" class="bx bx-menu"></i>
+      </div>
+    </header>
+
+    <!-- Job Listing  Section-->
+    <section class="jobs jobs-section sec-space obj-width">
+      <h2>Emplois en demande</h2>
+      <p>Services les plus consultés et les plus vendus de tous les temps</p>
+
+      <div class="search-box">
+        <div class="icon">
+          <i class="bx bx-search"></i>
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Search Jobs" id="searchInput" />
+        </div>
+      </div>
+
+      <div class="jobs-container" id="jobsList">
+          <li data-item="fulltime" class="job-list">
+  <img src="images/logo-asfp.png" alt="ASFP Sarl" />
+  
+  <h3 class="sm-text">Poste : Développeur Web</h3>
+  
+  <p><strong>Entreprise :</strong> ASFP Sarl</p>
+  <p><strong>Lieu :</strong> Bamako, Mali</p>
+  <p><strong>Type :</strong> À temps plein</p>
+  
+  <p><strong>Description :</strong><br>
+   Développement et maintenance des applications web modernes.<br>
+    Collaboration avec les équipes design et backend.
+  </p>
+
+  <p><strong>Compétences :</strong><br>
+   HTML, CSS, JavaScript, React, Git
+  </p>
+  <button id="g-btn">Postuler Maintenant</button>
+</li>
+
+<li data-item="freelancer" class="job-list">
+  <img src="images/redtic.png" alt="REDTIC" />
+  
+  <h3>Poste : Freelancer</h3>
+  
+  <p><strong>Entreprise :</strong> REDTIC</p>
+  <p><strong>Lieu :</strong> Bamako</p>
+  <p><strong>Type :</strong> Travailleur indépendant</p>
+  
+  <p><strong>Description :</strong><br>
+    Réalisation de projets web pour différents clients.
+    Gestion autonome des missions.
+  </p>
+
+  <p><strong>Compétences :</strong><br>
+    Autonomie, Web design, Communication client
+  </p>
+  <button id="g-btn">Postuler Maintenant</button>
+</li>
+
+<li data-item="partTime" class="job-list">
+  <img src="images/ferili-mali.png" alt="FERILI-MALI" />
+  
+  <h3 class="sm-text">Poste : Business Associate</h3>
+  
+  <p><strong>Entreprise :</strong> FERILI-MALI</p>
+  <p><strong>Lieu :</strong> Bamako</p>
+  <p><strong>Type :</strong> À temps partiel</p>
+  
+  <p><strong>Description :</strong><br>
+    Gestion des relations clients et développement commercial.
+  </p>
+
+  <p><strong>Compétences :</strong><br>
+    Marketing, Communication, Vente
+  </p>
+  <button id="g-btn">Postuler Maintenant</button>
+</li>
+
+<li data-item="fullTime" class="job-list">
+  <img src="images/t2.png" alt="Facebook" />
+  
+  <h3 class="sm-text">Poste : Digital Marketing</h3>
+  
+  <p><strong>Entreprise :</strong> ISPRIC</p>
+  <p><strong>Lieu :</strong> Bamako</p>
+  <p><strong>Type :</strong> À temps plein</p>
+  
+  <p><strong>Description :</strong><br>
+    Gestion des campagnes publicitaires et réseaux sociaux.
+  </p>
+
+  <p><strong>Compétences :</strong><br>
+    SEO, Ads, Réseaux sociaux
+  </p>
+  <button id="g-btn">Postuler Maintenant</button>
+</li>
+
+<li data-item="partTime" class="job-list">
+  <img src="images/t3.png" alt="cgtech" />
+  
+  <h3 class="sm-text">Poste : User Experience (UX)</h3>
+  
+  <p><strong>Entreprise :</strong> CGTECH-Mali</p>
+  <p><strong>Lieu :</strong> Bamako</p>
+  <p><strong>Type :</strong> À temps partiel</p>
+  
+  <p><strong>Description :</strong><br>
+    Amélioration de l’expérience utilisateur et tests UX.
+  </p>
+
+  <p><strong>Compétences :</strong><br>
+    UX/UI, Figma, Analyse utilisateur
+  </p>
+  <button id="g-btn">Postuler Maintenant</button>
+</li>
+      </div>
+
+      <div id="noResultsMessage" class="no-results">
+        <!-- Aucun emploi ne correspond à vos critères de recherche.. -->
+        <img src="images/no data.gif" alt="" />
+      </div>
+    </section>
+
+    <!-- Footer  Section-->
+
+   <footer class="footer">
+  <div class="obj-width">
+    
+    <div class="top">
+      <div>
+        <img src="images/logo.png" class="logo" alt="Logo DRHCOM" />
+        <p>
+          DRHCOM est un cabinet spécialisé en Ressources Humaines, 
+          offrant des services de recrutement, de formation et 
+          d’accompagnement professionnel pour les entreprises et les particuliers.
+        </p>
+      </div>
+
+      <!-- Réseaux sociaux (inchangés) -->
+      <div>
+        <a href="https://www.facebook.com/profile.php?id=61586330245431" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook-square"></i></a>
+        <a href="https://www.instagram.com/DRHCOM" target="_blank" rel="noopener noreferrer"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="https://www.linkedin.com/in/cabinet-drhcom-3505a121a" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin-square"></i></a>
+        <a href="https://x.com/MoussaD12239090" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.youtube.com/@Drhcom888" target="_blank" rel="noopener noreferrer"><i class="bx bxl-youtube"></i></a>
+        <a href="https://vm.tiktok.com/ZMHog4PwqbEUM-KmJDs/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-tiktok"></i></a>
+        <a href="https://wa.me/22376907396" target="_blank" rel="noopener noreferrer"><i class="bx bxl-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="bottom">
+
+      <div>
+        <h3>Nos Services</h3>
+        <a href="#Jobs">Recrutement & Sélection</a>
+        <a href="formation.html">Formation Professionnelle</a>
+        <a href="#">Conseil RH</a>
+        <a href="#">Coaching & Développement</a>
+      </div>
+
+      <div>
+        <h3>Formations</h3>
+        <a href="#">Leadership & Management</a>
+        <a href="#">Communication Professionnelle</a>
+        <a href="#">Gestion du Temps</a>
+        <a href="#">Développement Personnel</a>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <a href="contact.html">Tel: 66373177 / 76907396</a>
+        <a href="contact.html">Email : dynamicrhcom@yahoon.com</a>
+        <a href="#iframe">Adresse : Bamako, Mali</a>
+        <a href="#">Disponible : Lundi - Vendredi de 9h à 17h</a>
+      </div>
+
+      <div>
+        <h3>Informations</h3>
+        <a href="about.html">À propos de nous</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions d'utilisation</a>
+        <a href="#">Mentions légales</a>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="droit">© 2026 DRHCOM - Tous droits réservés</p>
+</footer>
+
+    <div class="backtotop" id="gotop">
+      <a href="#"><i class="bx bx-chevron-up"></i></a>
+    </div>
+
+    <!-- ------------------- Custom JS ---------------------  -->
+    <script src="./assets/js/toggle.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

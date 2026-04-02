@@ -1,0 +1,69 @@
+/* ------------------ SECTION JOBS ------------------ */
+.jobs-section {
+    margin-top: 8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ------------------ SEARCH BOX ------------------ */
+.search-box {
+    width: 100%;
+    margin: 3rem auto 2rem auto;
+    position: relative;
+}
+
+.search-box .icon i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    font-size: 1.2rem;
+    color: #0429fc; /* bleu premium */
+    transition: color 0.3s ease;
+}
+
+.search-box input {
+    display: block;
+    width: 100%;
+    padding: 12px 10px 12px 50px;
+    border: 2px solid #0429fc; /* bleu principal */
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-box input:focus {
+    border-color: #ff7f00; /* accent orange au focus */
+    box-shadow: 0 4px 15px rgba(255,127,0,0.3);
+}
+
+/* ------------------ NO RESULTS ------------------ */
+.no-results {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 2rem auto;
+    display: none;
+    background-color: rgba(255,127,0,0.08); /* orange très léger */
+    padding: 20px;
+    border-radius: 10px;
+    color: #0429fc; /* texte bleu */
+    transition: all 0.3s ease;
+}
+
+.no-results img {
+    display: block;
+    margin: 20px auto 0 auto;
+    max-width: 460px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 450px) {
+    .no-results img {
+        max-width: 100%;
+    }
+}
